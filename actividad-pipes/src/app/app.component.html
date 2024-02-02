@@ -1,0 +1,18 @@
+<div>
+  <h1> Mi nombre es {{name|uppercase}}</h1>
+  <p>el nombre de mi gato es {{nameCat|lowercase}}</p>
+  <p>mi cumpleaños es {{birthday| date:"MM/dd/yy"}}</p>
+  <h2>Async Hero Message and AsyncPipe</h2>
+  <p>el producto usando el pipe {{product|json}}</p>
+  <p>Message: {{ message$ | async }}</p>
+  <button (click)="resend()">Resend</button>`,
+
+
+  <p>The hero's birthday is {{ birthday2 | date:format }}</p>
+  <button (click)="toggleFormat()">Toggle Format</button>
+<p>el valor actual con pipe  es {{15.000 |currency}}</p>
+<p>Numero decimal con pipes   {{x | number: '2.0-1'}}</p>
+<p>numero con porcentaje {{y | percent: '2.0-1':'en'}}</p>
+
+
+</div>
